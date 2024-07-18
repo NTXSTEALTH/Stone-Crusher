@@ -1,68 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
 *{
+    font-family: 'ubuntu';
     margin: 0;
-    padding:0;
-
+    padding: 0;
 }
 
 body{
-    display: block;
-    height: 1000px
-    
+    overflow-x: hidden;
 }
 
-.navbar{
-    
-    display:flex;
+img{
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 0px 10px 0px 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    height:100px;
-    color: black;
-    font-family: 'ubuntu';
+    height: 100px;
+    padding: 15px 0px 20px 20px;
     font-weight: 600;
-    font-size: 32px;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* border-bottom: 3px solid; */
-    animation: fadein 1s linear;
+    min-width:500px;
+    flex-wrap: nowrap;
 }
-
-@keyframes fadein{
-    0%{
-    opacity: 0;
-    padding-left: 0px;}
-    100%{
-        opacity: 1;
-    padding-left: 20px}
+.logo{
+    font-size: 32px;
+    flex-grow: 1;
+    
 }
 
 .links{
     display: flex;
+    /* justify-content: center; */
     align-items: center;
-    gap:30px;
-
+    background: white;
+    padding: 10px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+    flex-wrap: nowrap;
+    transition: transform 1s linear;
+    transform: translate(100);
 }
 
-.links a{
-    font-size: 16px;
-    color : black;
-    text-decoration: none;
-}
-
-.links a:hover{
-    text-decoration: underline double black 2px;
-}
-
-.links .signup{
+.signup{
+    display: flex;
+    flex-wrap: nowrap;
     background:transparent;
     color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
-    padding: 10px;
-    margin-left:30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    box-shadow: 0px 0px 5px 5px rgb(0, 173, 181, 0.15);
+    padding: 10px 20px 10px 20px;
     border: rgb(0, 173, 181) solid;
     border-width: 2px;
     border-radius: 5px;
@@ -71,128 +65,62 @@ body{
     
     transition: box-shadow 0.3s, background-color 0.3s, font-size 0.3s, color 0.3s;
 }
-.links .signup:hover{
+.signup:hover{
     font-size:16px;
     font-weight:600;
     background-color: rgb(0, 173, 181);
     text-decoration: None;
 }
 
-.home{
-    display:inline-flex;
-    padding-left:20px;
-    padding-top: 70px;
-    animation: fadein 2s ease;
-    overflow: hidden;
+.toggle_menu{
+    display: none;
+    width: 50px;
+    aspect-ratio: 1;
+    border: none;
+    background: none;
 }
-
-.home h1{
-    font-family: 'ubuntu';
-}
-
-.home img{
-    height: 600px;
+.toggle_menu img{
     object-fit: cover;
-    filter: drop-shadow(1px 1px 20px rgb(61, 61, 61));
-    align-items: center;
-    justify-content: space-between;
-    gap: 0px;
+}
+.toggle_menu:active{ 
+    border: red solid;
+    cursor: pointer !important;
 }
 
 
-.intro{
-    padding: 20px;
-    list-style: none;
-    font-family: 'ubuntu';
-    font-size:32px;
-    font-weight: 300;
-    margin-right: 20px;
-}
-
-
-.aboutus{
-    display: inline-block;
-    background-color: #222831;
-    width: calc(100vw - 60px);
-    height: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 100px;
+@media (max-width: 40rem){
+    .links{
+        /* animation: slide_out 1s linear;  */
+        transform: translateX(200%);
+        display: None;
+    }
+    .toggle_menu {
+        display: block;
+    }
     
 }
 
-.aboutus h1{
-    color: white;
-    font-family: 'ubuntu';
-    font-size: 48px;
-}
-
-.aboutus p{
-    padding : 20px;
-    width: 500px;
-    font-family: 'ubuntu';
-    font-size: 24px;
-    color: white;
-}
-
-.prod{
-    padding: 20px;
-    padding-top: 90px;
-}
-
-.prod h1{
-    font-family: 'ubuntu';
-    font-size: 48px;
-}
-
-.prod-container{
+.container{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.product{
     position: relative;
-    display: flex;
-    width: 300px;
-    height: 400px;
-    border-radius: 1rem;
-    margin:  100px 50px;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
+    min-width:500px;
+    min-height: 500px;
+    max-height: auto;
+    padding: 20px 20px 20px 20px;
+    /* justify-content: center; */
+    align-items: flex-end;
+    
 }
-.product img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 1rem;
-    z-index: 0;
-}
-.product_info{
-    display: flex;
+.crusher_image{
     position: absolute;
-    color: rgb(0, 0, 0);
-    justify-content: center;
-    align-items: center;
-    bottom: 25;
-    width: 100%;
-    height: 25%;
-    background: #ffffff;
-    opacity: 100%;
-    border-radius: 1rem;
+    z-index: 0;
+    align-self: flex-start;
+    filter: drop-shadow(1px 1px 20px rgb(61, 61, 61));
+}
+.intro{
+    font-size: 24px;
+    position: absolute;
     z-index: 1;
-    opacity: 100%;
-    font-family: 'ubuntu';
-    font-size: 20px;
-    font-weight: 300;
-    transition: transform 0.5s ease;
-    transform: translateY(0);
-    overflow: hidden;
+    /* color: #00ADB5; */
+    /* text-align: center; */
 }
-.product:hover .product_info{
-    transform: translateY(-100%);
-}
-
-
-
