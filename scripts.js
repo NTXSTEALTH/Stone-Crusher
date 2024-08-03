@@ -1,8 +1,11 @@
+
+
 const product_button = document.getElementById('Products')
 const product_section = document.getElementById('Product-section')
 
 const Company_button = document.getElementById('Company')
 const Company_section = document.getElementById('Company-section')
+
 
 
 Company_button.addEventListener('click', () => { 
