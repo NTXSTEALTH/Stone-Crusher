@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+
+}
+
+
+hr{
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 1rem;
+}
+
+
+.signupcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.signcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background: rgb(34,40,49);
+    background-image: linear-gradient(to right bottom,
+    #323232, #393b43, #3a4754, #335364, #266170,
+    #1d727f, #0f838b, #029495, #00aeab, #00c8c2, 
+    #00e3d7, #14ffec);    
+    border-radius: 1rem;
+    padding:0px 20px ;
+    width: 500px;
+    height: 700px;
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, .15);
+}
+
+.signcard h1{
+    position: relative;
+    margin: 50px 0px;
+    font-size: 32px;
+}
+
+.signcard .Heading{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0px -20px 30px;
+    width: 100%;
+    height: 100px;
+    
+}
+.Heading h1{
+    font-size: 48px;
+}
+
+.signcard .mode{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.signcard form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100rem;
+    width: 100%;
+}
+
+.sign-in{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.signcard .input-fields{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+
+
+.Email-input::placeholder, .Password-input::placeholder{
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+
+
+.Email-input{
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    margin: 20px 10px;
+    outline: none;
+    
+}
+.Password-input{
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    margin: 20px 10px;
+    outline: none;
+}
+
+.save-details{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+    gap: 20px;
+    
+}
+
+.save-details label{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 100;
+    height: 25px;
+}
+ 
+.save-details-check-box{
+    height: 25px;
+    width: 25px;
+    accent-color: rgb(255, 255, 255);
+}
+
+.more-options-divider{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.signin-btn{
+    background: rgb(9, 239, 224, .25);
+    border: 1px transparent solid;
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, .05);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    width: 100px;
+    color: white;
+    font-size: 16px;
+}
+
+.signin-btn:hover{
+    cursor: pointer;
+    background: rgb(9, 239, 224, .5);
+}
+
+.forgot-password{
+    background: transparent;
+    border: 1px transparent solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    color: white;
+    font-size: 18px;
+}
+
+
+.more-sign-in-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 10px;
+    width: 100%;
+    height: 100px
+
+}
+
+.more-sign-in-options hr{
+    width: 30%;
+    height: calc(1px - 0.5px);
+    background: #f9f9f9;
+    border: none;
+}
+
+.social-icons{
+    display: flex;
+    margin: 10px 0px;
+    gap:20px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin/singup</title>
+    <link rel="stylesheet" href="signup-style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <div class="signupcontainer">
+
+        <div class="signcard">
+            <span class = "Heading"><h1>| Stone Crusher</h1></span>
+            <span class ="mode">
+                <h1 class = "sign-in">SIGN IN</h1>
+                <h1 class = "sign-up">SIGN UP</h1>
+            </span>
+            <form>
+                    <span class = "input-fields">
+                        <input type="email" class = "Email-input" placeholder="| Email">
+                        <box-icon name='user' type='solid' color='#f9f5f5' ></box-icon>
+                    </span>
+                    <span class = "input-fields">
+                        <input type="password" class = "Password-input" placeholder="| Password">
+                        <box-icon name='key' type = "solid" color ="white"></box-icon>
+                    </span>
+                    <span class = "input-fields">
+                        <div class="save-details">
+                            <label for="save-details">Save Login details</label>
+                            <input type="checkbox" id="save-details" class="save-details-check-box" name="Save details">
+                        </div>
+                    </span>  
+            </form>
+            <button class="signin-btn">SIGN IN</button>
+            <button class="forgot-password">Forgot Password</button>
+            <div class="more-sign-in-options">
+                <span class = "more-options-divider"><hr> Sign in using <hr></span>
+                <div class="social-icons">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANNJREFUSEvtltENwjAMRO82gU3oJjAJMAlsQpmEbmJwlUpRRWunJIqQ4p98JPLLuefURKVgJS7+Gywih1C5QVeS47oWmxUH2BnABJ04A8l9EbCI7AC8FpIXBStU4d+iDHhBbQ/gOd2C5CV7qcO3fUSJXQrnF0k2l4gcAdyiRD3JzlLYwK5Si8iai+dVvJM8WaUvAb5mc3Wi4mrgjqT2dd63urXT5+/UHhDLV+O+q4/jTM1czVwuZ200l85a8bylE4g5zv48CHgVWeeS28lK6N2vBn4Dvad5H6s6p+IAAAAASUVORK5CYII="/>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAX5JREFUSEvVluttwzAMhHWTNJmkzSbNJG0naTpJs0mTSVifIQGuRFK0HcOogfyKxY+PE89IOz3YiZv+F1hEDuwUgNvSjoUrzrDXlNJbBSO8/D6iyXTBGfiZUnoJVMcEvgC89951wSJC2HcviPL/DcDRO2eCV0DJOwO4zAbn9v4YB9nO6xD8nmf7nMcwCi4CHYWpBRcRtlebKcXTzG8iPLbYrbTwGrDT4hMAVvqQRwNTwbw200etdE0GGpizLfNi7K5ClySggaUKdAFwNrRQv2vl0HTsD9hQs3k1RGRTsDnfGeCma5GKrwBOm7aawUUkLK589eqceP9rI2nGpYlLWx6mwGqqiGjX8Vi7VnSBcE1y1u5WMpaPmvSclela3iBwrtK6xWyIuvEsMBeIZxLF+GkUT5VJTLtvCnMrW+xuvN6HgFe5tynZESrZNJXopw9nVxtHeD1qL3bB5dDEc4vxT+ONwhvMhQoOfXmGwcp9PUQhqypeYn3emcUVr01kN/AvQyW0H7kVU8AAAAAASUVORK5CYII="/>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAX1JREFUSEvtVdtRAzEMXFUCVAKpJKQSSCWESkgq4ToR7I3M+BzZ1j2G/EQzmZvc2d7VaiULbhRyI1zcgf9N+U2kVtV3AHsAjwDOAD75FJGBmajqa/6f766AVfULwCFtakmgqgT6+D30xVlHAhcjBBF5ytdMgO2gb2PdBTeSHmiOwayPAAYRIZkxSmBKwgwYXFQFz0j2fDHK3cuY7Cl1HmR7KqW3ur71UJmpJfCXba3GlJq1K4Mbk2TDDOCjiNB8k/DMlTu0lRAz8QiWe/rAZvvUFpFDA0qPPjk1M1ZVr8aRw1trdrmbXVfzparWaryEAFto0r8tYEpMZ28hNafXzmPsjsxsIhF8DQFXZredTG4OEvboGtCqzC3gLeSuZlsFtqzXgLu9m9e6ey1ai7G3KX8kqoaaC8xLIwrKmX6IsCtvJw6Q5OSHGYDEcidUjYQHTFkTgQj5cJZdqa2u6YJ/zlTgxZB+F28GR5g2XR09YOm6rquXHtzbdwfuKbTZ9x/9T5Ef1TuQXgAAAABJRU5ErkJggg=="/>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAdVJREFUSEvllmFOwzAMheObsJuwk8BOAjsJ4ySUk7CbmL4qjlzXTtwKaT+IhDbWNJ+fY7+EyoMGPYhbdoOZ+bmU8lQDxudUv9+J6J4VkgIzMwBvM0RDPQaCuGQCGIKZ+aOU8ppVUufdSinXXgAhuKoEFCqPDKT9HMFdcIX+HKE575w8eAT+UkqleLLKoRR/Mt9VvgEz83stJAkexXKr1YwC05WMOfhffvskoqnORfAysN9Yt40VOEgx9klUp7IfrLNKuQVbtQD9FfhGRBeJ3ILZSIIpnFIyzSRmRnGK0cjTprqBg/Rs9iYbhFMrq+xpMKpQF8ShNEtgToHh0VKo+KLBcCcYhh5uD2ZUBxlMg3cXllKM/bUm1LZulOoWYUalnpPeY7zE82wDSJ82NjBm1u63PKbZRaJ28lpgd2Uzs1cvq9bsGQg8VvpweMypvY2O0ZUAz6tFNVwGcCwkASD18OOlJRQMCsXH3XLQaV61k1pE2yZcC4u+KPim4BLHaP+QUHBRPRHRWd+zrFrnHavYtd3eDUTg11ktDL57kQu8OfT67p3LLLYc8MiAt4kOuHvAZC57unDCxQx42IJDsGkTmEA7U01lwzC+7U0jcrw0eK9ljub/P/AvaRP1H1Ij1RoAAAAASUVORK5CYII="/>               
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
