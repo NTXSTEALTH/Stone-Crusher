@@ -1,17 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+
+@keyframes fadingin {
+    0%{
+        opacity: 0;
+        padding-left: 0px;
+    }
+
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+        padding-left: 5px;
+    }
+}
+
 *{
     font-family: 'roboto';
     margin: 0;
     padding: 0;
 }
-
-body{
-    
-
-}
-
 
 hr{
     border: 2px rgb(0, 0, 0) solid;
@@ -52,6 +62,7 @@ hr{
     position: relative;
     margin: 50px 0px;
     font-size: 32px;
+    
 }
 
 .signcard .Heading{
@@ -61,11 +72,26 @@ hr{
     margin: 20px 0px -20px 30px;
     width: 100%;
     height: 100px;
+    animation: fadingin 2s linear;
     
 }
 .Heading h1{
     font-size: 48px;
 }
+
+.sign-up{
+    background: transparent;
+
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, .15);
+    transition: background-color 0.3s linear;
+}
+
+.sign-up:hover{
+    background: rgba(0, 177, 133, 0.5);
+}
+
 
 .signcard .mode{
     display: flex;
@@ -83,10 +109,7 @@ hr{
     width: 100%;
 }
 
-.sign-in{
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
+
 
 .signcard .input-fields{
     display: flex;
@@ -169,6 +192,7 @@ hr{
     width: 100px;
     color: white;
     font-size: 16px;
+    transition: background 0.3s linear;
 }
 
 .signin-btn:hover{
@@ -209,7 +233,7 @@ hr{
 
 .social-icons{
     display: flex;
-    margin: 10px 0px;
+    margin: 0px 0px 50px 0px;
     gap:20px;
     cursor: pointer;
 }
